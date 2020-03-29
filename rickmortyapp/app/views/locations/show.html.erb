@@ -1,0 +1,31 @@
+<h1><%= @location["name"] %></h1>
+<div class = "container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Dimension</th>
+                <th>Residents</th>
+                <th colspan="4"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= @location["name"] %></td>
+                    <td><%= @location["type"] %></td>
+                    <td><%= @location["dimension"] %></td>
+                    <% if @characters.is_a?(Hash) 
+                        puts %><td><%= @characters["name"] %></td>
+                    <% else 
+                        puts %><td><% @characters.each do |character| %>
+                            <%= character["name"]%></br>
+                        <% end %></td>
+                    <% end %>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+</div>
+<%= link_to "Home page", root_path %>

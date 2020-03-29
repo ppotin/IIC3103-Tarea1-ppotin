@@ -1,0 +1,49 @@
+<h1><%= @character["name"] %></h1>
+<img src=<%= @character["image"]%>>
+<div class = "container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Species</th>
+                <th>Type</th>
+                <th>Gender</th>
+                <th>Origin</th>
+                <th>Location</th>
+                <th>Episodes</th>
+                <th colspan="5"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><%= @character["name"] %></td>
+                    <td><%= @character["status"] %></td>
+                    <td><%= @character["species"] %></td>
+                    <td><%= @character["type"] %></td>
+                    <td><%= @character["gender"] %></td>
+                    <% if @character["origin"]["name"] != "unknown" %>
+                        <td><%= link_to @character["origin"]["name"], root_path + "locations/show/" + @character["origin"]["url"][41..-1]%></td>
+                    <% else %>
+                        <td>unknown</td>
+                    <% end %>
+                    <% if @character["location"]["name"] != "unknown" %>
+                        <td><%= link_to @character["location"]["name"], root_path + "locations/show/" + @character["location"]["url"][41..-1]%></td>
+                    <% else %>
+                        <td>unknown</td>
+                    <% end %>
+                    <% if @episodes.is_a?(Hash) 
+                        puts %><td><%= @episodes["name"] %></td>
+                    <% else 
+                        puts %><td><% @episodes.each do |episode| %>
+                            <%= episode["name"]%></br>
+                        <% end %></td>
+                    <% end %>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+</div>
+<%= link_to "Home page", root_path %>
