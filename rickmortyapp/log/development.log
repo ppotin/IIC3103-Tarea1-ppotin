@@ -123,3 +123,282 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 2502ms (Views: 26.3ms | Allocations: 16356)
 
 
+Started GET "/" for ::1 at 2020-03-29 20:11:52 -0300
+  
+LoadError (cannot load such file -- /Users/philippepotin/Documents/Universidad/2020-01/Taller integración/Tareas/Tarea_1/IIC3103-Tarea1-ppotin/rickmortyapp/app/helpers/elcome_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/welcome_controller.rb:4:in `<main>'
+Started GET "/" for ::1 at 2020-03-29 20:13:41 -0300
+  
+LoadError (cannot load such file -- /Users/philippepotin/Documents/Universidad/2020-01/Taller integración/Tareas/Tarea_1/IIC3103-Tarea1-ppotin/rickmortyapp/app/helpers/elcome_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/welcome_controller.rb:4:in `<main>'
+Started GET "/" for ::1 at 2020-03-29 20:13:43 -0300
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 2973ms (Allocations: 5689)
+
+
+  
+Encoding::CompatibilityError (incompatible encoding regexp match (ASCII-8BIT regexp with UTF-8 string)):
+  
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:338:in `match?'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:338:in `block in find_template_paths_from_details'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:334:in `reject'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:334:in `find_template_paths_from_details'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:193:in `query'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:189:in `_find_all'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:121:in `block in find_all'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:156:in `block in cached'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:66:in `cache'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:155:in `cached'
+actionview (6.0.2.2) lib/action_view/template/resolver.rb:120:in `find_all'
+actionview (6.0.2.2) lib/action_view/path_set.rb:77:in `block (2 levels) in _find_all'
+actionview (6.0.2.2) lib/action_view/path_set.rb:76:in `each'
+actionview (6.0.2.2) lib/action_view/path_set.rb:76:in `block in _find_all'
+actionview (6.0.2.2) lib/action_view/path_set.rb:75:in `each'
+actionview (6.0.2.2) lib/action_view/path_set.rb:75:in `_find_all'
+actionview (6.0.2.2) lib/action_view/path_set.rb:55:in `find_all'
+actionview (6.0.2.2) lib/action_view/path_set.rb:59:in `exists?'
+actionview (6.0.2.2) lib/action_view/lookup_context.rb:141:in `exists?'
+actionview (6.0.2.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (6.0.2.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-29 20:14:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 944)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2590ms (Views: 116.5ms | Allocations: 34054)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:16:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 944)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2397ms (Views: 48.3ms | Allocations: 16283)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:18:31 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2458ms (Views: 54.6ms | Allocations: 16233)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:19:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2993ms (Views: 40.7ms | Allocations: 16137)
+
+
+Started GET "/episodes/show/4" for ::1 at 2020-03-29 20:19:46 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1718ms (Views: 24.3ms | Allocations: 8739)
+
+
+Started GET "/characters/show/38" for ::1 at 2020-03-29 20:19:59 -0300
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"38"}
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 691)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1795ms (Views: 21.4ms | Allocations: 8437)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:20:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2368ms (Views: 20.7ms | Allocations: 9958)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:21:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2808ms (Views: 43.3ms | Allocations: 16246)
+
+
+Started GET "/episodes/show/3" for ::1 at 2020-03-29 20:21:12 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 878)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1945ms (Views: 21.1ms | Allocations: 9510)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:22:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2637ms (Views: 34.2ms | Allocations: 9964)
+
+
+Started GET "/episodes/show/31" for ::1 at 2020-03-29 20:22:32 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"31"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1914ms (Views: 8.0ms | Allocations: 8163)
+
+
+Started GET "/" for ::1 at 2020-03-29 20:24:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2577ms (Views: 37.8ms | Allocations: 15370)
+
+
+Started GET "/episodes/show/5" for ::1 at 2020-03-29 20:24:19 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 765)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2234ms (Views: 13.3ms | Allocations: 9225)
+
+
+Started GET "/episodes/show/5" for ::1 at 2020-03-29 20:24:50 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 500)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1437ms (Views: 8.1ms | Allocations: 8559)
+
+
+Started GET "/episodes/show/5" for ::1 at 2020-03-29 20:25:06 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1580ms (Views: 43.7ms | Allocations: 14836)
+
+
+Started GET "/characters/show/338" for ::1 at 2020-03-29 20:25:49 -0300
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"338"}
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 692)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1734ms (Views: 21.8ms | Allocations: 8393)
+
+
+Started GET "/" for ::1 at 2020-04-04 19:41:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3414ms (Views: 64.6ms | Allocations: 15292)
+
+
+Started GET "/episodes/show/29" for ::1 at 2020-04-04 19:41:27 -0300
+Processing by EpisodesController#show as HTML
+  Parameters: {"id"=>"29"}
+  Rendering episodes/show.html.erb within layouts/application
+  Rendered episodes/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2423ms (Views: 11.6ms | Allocations: 9316)
+
+
+Started GET "/characters/show/149" for ::1 at 2020-04-04 19:41:33 -0300
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"149"}
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 657)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1842ms (Views: 11.6ms | Allocations: 8061)
+
+
+Started GET "/" for ::1 at 2020-04-04 19:41:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2884ms (Views: 11.2ms | Allocations: 9955)
+
+
