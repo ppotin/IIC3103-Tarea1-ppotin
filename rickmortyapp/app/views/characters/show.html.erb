@@ -41,12 +41,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     <td><%= @character["type"] %></td>
                     <td><%= @character["gender"] %></td>
                     <% if @character["origin"]["name"] != "unknown" %>
-                        <td><%= link_to @character["origin"]["name"], root_path + "locations/show/" + @character["origin"]["url"][41..-1]%></td>
+                        <td><%= link_to @character["origin"]["name"], root_path + "locations/show/" + @character["origin"]["url"][62..-1]%></td>
                     <% else %>
                         <td>unknown</td>
                     <% end %>
                     <% if @character["location"]["name"] != "unknown" %>
-                        <td><%= link_to @character["location"]["name"], root_path + "locations/show/" + @character["location"]["url"][41..-1]%></td>
+                        <td><%= link_to @character["location"]["name"], root_path + "locations/show/" + @character["location"]["url"][62..-1]%></td>
                     <% else %>
                         <td>unknown</td>
                     <% end %>
